@@ -1,0 +1,13 @@
+<div class="button">
+    <button (click)="toggleHighRateOnly()">Display only high rate</button>
+    <button (click)="displayAll()">Display all</button>
+</div>    
+
+<div class="container">
+  <div *ngFor="let item of displayedAnime" class="anime-block">
+    <h2>{{item.title}}</h2>  
+    <p>{{item.synopsis}}</p>
+    <img [src]="item.images.jpg.image_url" alt="{{item.title}} image">
+    <p>{{item.aired.from | date:'yyyy'}}</p>
+  </div>  
+</div>  

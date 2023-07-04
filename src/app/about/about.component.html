@@ -1,0 +1,16 @@
+<div class="cookie-card">
+    <div *ngIf="anime">
+        <span class="title"> 🚗 {{anime.title}} 🚗</span>       
+        <img [src]="anime.images.jpg.image_url" alt="{{anime.title}} image">
+        <p class="description">{{anime.synopsis}}</p>
+        <p>{{anime.aired.from | date:'yyyy'}}</p>   
+    </div>
+</div>
+
+
+<!-- <div *ngIf="anime">
+    <h2>{{anime.title}}</h2>
+    <p>{{anime.synopsis}}</p>
+    <img [src]="anime.images.jpg.image_url" alt="{{anime.title}} image">
+    <p>{{anime.aired.from | date:'yyyy'}}</p>
+</div> -->
